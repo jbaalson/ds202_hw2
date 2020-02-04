@@ -70,7 +70,7 @@ The 3 most fuel-efficient models in terms of highway mileage are, jetta, new bee
 ```{r}
 compact <- mpg[mpg$class == 'compact', ]
 numCompact <- length(unique(compact$model))
-numCompact
+numCompac
 ```
 
 There are 8 different compact models included in the data set.
@@ -80,7 +80,7 @@ There are 8 different compact models included in the data set.
 plot(mpg$hwy, mpg$cty)
 ```
 
-Some of the highway and city mpg data is left blank so it is not on the scatterplot.
+Some of the data points overlap so there does not appear to be as many dots as there actually are on the scatterplot.
 
 4. Are cars in 2008 more fuel efficient than cars in 1999? Use graphs *and* summary statistics to answer this question. Explain your findings.
 ```{r}
