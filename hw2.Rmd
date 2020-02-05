@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 This homework is about syntax and basic plotting functions in R, and is **due by the end of Feb 7**. 
 
 You can use the RMarkDown file with these homework instructions as a template for your work. 
@@ -67,10 +68,12 @@ top3
 The 3 most fuel-efficient models in terms of highway mileage are, jetta, new beetle, and new beetle.
 
 2. How many different compact models are included in this dataset? Storage the answer in  a variable named `numCompact` and print.
+
 ```{r}
 compact <- mpg[mpg$class == 'compact', ]
 numCompact <- length(unique(compact$model))
-numCompac
+numCompact
+
 ```
 
 There are 8 different compact models included in the data set.
